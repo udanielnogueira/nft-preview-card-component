@@ -38,15 +38,55 @@ body {
     gap: 2rem;
 }
 
+/* over effect */
+.nft-img-link {
+    position: relative;
+}
+
 .nft-img {
     width: 30rem;
     border-radius: 0.5rem;
+}
+
+.overlay-color {
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: var(--cyan);
+}
+
+.overlay-icon {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    height: 15%;
+    width: 15%;
+    opacity: 0;
+    transition: .7s ease;
+}
+
+.nft-img-link:hover .overlay-icon {
+    opacity: 1;
+}
+
+.nft-img-link:hover .overlay-color {
+     opacity: 0.4;
+     border-radius: 0.5rem;
 }
 
 .nft-name {
     font-weight: 600;
     color: var(--white);
     font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.nft-name:hover {
+    color: var(--cyan);
 }
 
 .description {
@@ -94,6 +134,11 @@ body {
 
 .author-name {
     color: var(--white);
+    text-decoration: none;
+}
+
+.author-name:hover {
+    color: var(--cyan);
 }
 
 .card hr {
