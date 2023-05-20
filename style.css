@@ -40,6 +40,7 @@ body {
 
 /* over effect */
 .nft-img-link {
+    /* talk about */
     position: relative;
 }
 
@@ -67,12 +68,15 @@ body {
     left: 45%;
     height: 15%;
     width: 15%;
+
+    /* talk about */
     opacity: 0;
     transition: .7s ease;
 }
 
 /* over effect */
 .nft-img-link:hover .overlay-icon {
+    /* talk about */
     opacity: 1;
 }
 
