@@ -1,11 +1,11 @@
 :root {
     font-size: 62.5%;
-    --softblue: hsl(215, 51%, 70%);
+    --white: hsl(0, 0%, 100%);
     --cyan: hsl(178, 100%, 50%);
+    --softblue: hsl(215, 51%, 70%);
     --very-dark-blue-main-bg: hsl(217, 54%, 11%);
     --very-dark-blue-card-bg: hsl(216, 50%, 16%);
     --very-dark-blue-line: hsl(215, 32%, 27%);
-    --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -30,18 +30,12 @@ body {
 }
 
 .card {
-    background-color: var(--very-dark-blue-card-bg);
     padding: 2.5rem;
     border-radius: 1rem;
+    background-color: var(--very-dark-blue-card-bg);
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-/* over effect */
-.nft-img-link {
-    /* talk about */
-    position: relative;
 }
 
 .nft-img {
@@ -49,42 +43,43 @@ body {
     border-radius: 0.5rem;
 }
 
-/* over effect */
+/* Over Effect Start */
+
+.nft-img-link {
+    position: relative;
+}
+
 .overlay-color {
-    border-radius: 0.5rem;
     position: absolute;
+    border-radius: 0.5rem;
     top: 0;
+    opacity: 0;
     width: 100%;
     height: 99%;
-    opacity: 0;
     transition: .7s ease;
     background-color: var(--cyan);
 }
 
-/* over effect */
 .overlay-icon {
     position: absolute;
     top: 45%;
     left: 45%;
-    height: 15%;
     width: 15%;
-
-    /* talk about */
+    height: 15%;
     opacity: 0;
     transition: .7s ease;
 }
 
-/* over effect */
 .nft-img-link:hover .overlay-icon {
-    /* talk about */
     opacity: 1;
 }
 
-/* over effect */
 .nft-img-link:hover .overlay-color {
-     opacity: 0.4;
-     border-radius: 0.5rem;
+    opacity: 0.4;
+    border-radius: 0.5rem;
 }
+
+/* Over Effect End */
 
 .nft-name {
     font-weight: 600;
@@ -109,8 +104,8 @@ body {
 }
 
 .price {
-    color: var(--cyan);
     font-weight: 400;
+    color: var(--cyan);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,26 +113,26 @@ body {
 }
 
 .days {
-    color: var(--softblue);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.4rem;
     font-weight: 300;
+    color: var(--softblue);
 }
 
 .author {
+    font-weight: 300;
     color: var(--softblue);
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-weight: 300;
 }
 
 .author-img {
     width: 3rem;
-    border: solid white 0.1rem;
     border-radius: 100%;
+    border: solid white 0.1rem;
 }
 
 .author-name {
