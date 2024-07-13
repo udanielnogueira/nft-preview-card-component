@@ -11,6 +11,10 @@ Card NFT utilizando HTML e CSS.
 - HTML5
 - CSS3
 
+## Informações
+
+- Uso do padrão BEM de CSS
+
 ## Link de acesso
 
 <a href="https://udanielnogueira.github.io/nft-preview-card-component/" target="_blank">NFT Card Preview component</a>

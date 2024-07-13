@@ -25,103 +25,99 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
     height: 100vh;
 }
 
 .card {
+    display: flex;
     padding: 2.5rem;
     border-radius: 1rem;
     background-color: var(--very-dark-blue-card-bg);
-    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.nft-img {
+.card__image-jpg {
     width: 30rem;
     border-radius: 0.5rem;
 }
 
-/* Over Effect Start */
+/* Overlay Effect Start */
 
-.nft-img-link {
+.card__image {
     position: relative;
 }
 
-.overlay-color {
-    position: absolute;
-    border-radius: 0.5rem;
+.card__image-overlay {
     top: 0;
     opacity: 0;
-    width: 100%;
     height: 99%;
+    width: 100%;
+    position: absolute;
     transition: .7s ease;
+    border-radius: 0.5rem;
     background-color: var(--cyan);
 }
 
-.overlay-icon {
-    position: absolute;
+.card__image-icon {
     top: 45%;
     left: 45%;
     width: 15%;
     height: 15%;
-    opacity: 0;
+    position: absolute;
     transition: .7s ease;
+    opacity: 0;
 }
 
-.nft-img-link:hover .overlay-icon {
+.card__image:hover .card__image-icon {
     opacity: 1;
 }
 
-.nft-img-link:hover .overlay-color {
+.card__image:hover .card__image-overlay {
     opacity: 0.4;
     border-radius: 0.5rem;
 }
 
-/* Over Effect End */
+/* Overlay Effect End */
 
-.nft-name {
+.card__name {
     font-weight: 600;
     color: var(--white);
     font-size: 2.5rem;
     text-decoration: none;
 }
 
-.nft-name:hover {
+.card__name:hover {
     color: var(--cyan);
 }
 
-.description {
+.card__description {
     font-weight: 300;
     color: var(--softblue);
 }
 
-.info {
+.card__info {
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
-.price {
+.card__info-price {
+    display: flex;
     font-weight: 400;
     color: var(--cyan);
-    display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.7rem;
 }
 
-.days {
+.card__info-days {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 0.4rem;
     font-weight: 300;
     color: var(--softblue);
 }
 
-.author {
+.card__author {
     font-weight: 300;
     color: var(--softblue);
     display: flex;
@@ -129,18 +125,18 @@ body {
     gap: 1rem;
 }
 
-.author-img {
+.card__author-img {
     width: 3rem;
     border-radius: 100%;
     border: solid white 0.1rem;
 }
 
-.author-name {
+.card__author-name {
     color: var(--white);
     text-decoration: none;
 }
 
-.author-name:hover {
+.card__author-name:hover {
     color: var(--cyan);
 }
 
