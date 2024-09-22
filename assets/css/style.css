@@ -1,0 +1,145 @@
+:root {
+  font-size: 62.5%;
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --softblue: hsl(215, 51%, 70%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-main-bg);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: var(--very-dark-blue-card-bg);
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card__image-jpg {
+  width: 30rem;
+  border-radius: 0.5rem;
+}
+
+/* Overlay Effect Start */
+
+.card__image {
+  position: relative;
+}
+
+.card__image-overlay {
+  top: 0;
+  opacity: 0;
+  height: 99%;
+  width: 100%;
+  position: absolute;
+  transition: 0.7s ease;
+  border-radius: 0.5rem;
+  background-color: var(--cyan);
+}
+
+.card__image-icon {
+  top: 45%;
+  left: 45%;
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  transition: 0.7s ease;
+  opacity: 0;
+}
+
+.card__image:hover .card__image-icon {
+  opacity: 1;
+}
+
+.card__image:hover .card__image-overlay {
+  opacity: 0.4;
+  border-radius: 0.5rem;
+}
+
+/* Overlay Effect End */
+
+.card__name {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card__name:hover {
+  color: var(--cyan);
+}
+
+.card__description {
+  font-weight: 300;
+  color: var(--softblue);
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__info-price {
+  display: flex;
+  font-weight: 400;
+  color: var(--cyan);
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.card__info-days {
+  display: flex;
+  align-items: center;
+  color: var(--softblue);
+  font-weight: 300;
+  gap: 0.4rem;
+}
+
+.card__author {
+  display: flex;
+  font-weight: 300;
+  color: var(--softblue);
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__author-img {
+  width: 3rem;
+  border-radius: 100%;
+  border: solid white 0.1rem;
+}
+
+.card__author-name {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.card__author-name:hover {
+  color: var(--cyan);
+}
+
+.card hr {
+  border: 1px solid var(--very-dark-blue-line);
+}

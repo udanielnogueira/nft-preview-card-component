@@ -4,16 +4,16 @@ Card NFT utilizando HTML e CSS.
 
 ## Preview
 
-![Preview do projeto](img/nft-card-preview-component-preview.png "QR Code component preview")
+![Preview do projeto](./assets/img/nft-card-preview-component-preview.png "QR Code component preview")
 
 ## Tecnologias
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## Informações
 
-- Uso do padrão BEM de CSS
+Uso do padrão BEM de CSS
 
 ## Link de acesso
 
