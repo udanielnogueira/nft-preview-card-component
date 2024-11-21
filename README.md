@@ -1,4 +1,4 @@
-# nft-preview-card-component
+# NFT Preview Card Component
 
 Card NFT utilizando HTML e CSS.
 
